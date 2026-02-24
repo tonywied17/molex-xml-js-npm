@@ -61,6 +61,30 @@ parseString(xml, { explicitArray: false }, (err, result) => {
 - `parseDates` (boolean, default: `true`) — attempt ISO-8601 date parsing into `Date`
 - `coerceNull` (boolean, default: `true`) — convert the string `null` to `null` value
 
+### New: `collapseTextNodes` (boolean, default: `false`)
+
+- `collapseTextNodes` (boolean, default: `false`) — when `true`, elements that contain only a single text or CDATA child and have no attributes will be returned as a plain string instead of an object. This option is opt-in to preserve backwards compatibility with code that expects the full object shape.
+
+Example where `collapseTextNodes` is useful:
+
+```xml
+<player>
+  <id>76561198000000000</id>
+  <name><![CDATA[MyName]]></name>
+  <avatar>https://avatars.example/00.jpg</avatar>
+</player>
+```
+
+With default options the parsed shape for `<name>` is an object that preserves children/mixed content. With `collapseTextNodes: true` the parser will return `name: "MyName"` and `avatar: "https://..."`, which is convenient when your application expects string values for simple elements.
+
+Use it like this:
+
+```javascript
+const { parse } = require('molex-xml');
+const out = parse(xml, { explicitArray: false, collapseTextNodes: true });
+// out.player.name === 'MyName'
+```
+
 Example enabling granular casting:
 
 ```javascript
@@ -105,6 +129,13 @@ Run the included basic tests with:
 
 ```bash
 node test/test.js
+```
+
+Verbose tests and examples:
+
+```bash
+node test/test-verbose.js
+node test/example-verbose.js
 ```
 
 ## Repository

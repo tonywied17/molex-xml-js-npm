@@ -10,7 +10,8 @@ const xml = `<?xml version="1.0"?>
   <body>Don't forget me this weekend!</body>
 </note>`;
 
-parseString(xml, { explicitArray: false }, (err, result) => {
+parseString(xml, { explicitArray: false }, (err, result) =>
+{
   if (err) return console.error(err);
   console.log('PARSED:', JSON.stringify(result, null, 2));
 
