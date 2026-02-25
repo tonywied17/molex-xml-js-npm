@@ -1,4 +1,4 @@
-# molex-xml-npm
+# molex-xml-js
 
 [![npm version](https://img.shields.io/npm/v/molex-xml-js.svg)](https://www.npmjs.com/package/molex-xml-js)
 [![npm downloads](https://img.shields.io/npm/dm/molex-xml-js.svg)](https://www.npmjs.com/package/molex-xml-js)
@@ -21,13 +21,13 @@
 ## Installation
 
 ```bash
-npm install molex-xml-npm
+npm install molex-xml-js
 ```
 
 ## Quick Start
 
 ```javascript
-const { parseString, Builder } = require('molex-xml-npm');
+const { parseString, Builder } = require('molex-xml-js');
 
 const xml = `<?xml version="1.0"?>
 <note importance="high" logged="true">
