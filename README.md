@@ -1,8 +1,8 @@
-# molex-xml
+# molex-xml-npm
 
-[![npm version](https://img.shields.io/npm/v/molex-xml.svg)](https://www.npmjs.com/package/molex-xml)
-[![npm downloads](https://img.shields.io/npm/dm/molex-xml.svg)](https://www.npmjs.com/package/molex-xml)
-[![GitHub](https://img.shields.io/badge/GitHub-molex--xml-blue.svg)](https://github.com/tonywied17/molex-xml)
+[![npm version](https://img.shields.io/npm/v/molex-xml-npm.svg)](https://www.npmjs.com/package/molex-xml-npm)
+[![npm downloads](https://img.shields.io/npm/dm/molex-xml-npm.svg)](https://www.npmjs.com/package/molex-xml-npm)
+[![GitHub](https://img.shields.io/badge/GitHub-molex--xml--npm-blue.svg)](https://github.com/tonywied17/molex-xml-npm)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D14-brightgreen.svg)](https://nodejs.org)
 [![Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](package.json)
@@ -21,13 +21,13 @@
 ## Installation
 
 ```bash
-npm install molex-xml
+npm install molex-xml-npm
 ```
 
 ## Quick Start
 
 ```javascript
-const { parseString, Builder } = require('molex-xml');
+const { parseString, Builder } = require('molex-xml-npm');
 
 const xml = `<?xml version="1.0"?>
 <note importance="high" logged="true">
@@ -115,7 +115,7 @@ node test/example-verbose.js
 
 ## Repository
 
-https://github.com/tonywied17/molex-xml
+https://github.com/tonywied17/molex-xml-npm
 
 ## License
 

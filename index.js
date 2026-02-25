@@ -1,5 +1,5 @@
 /**
- * Root exporter for molex-xml. Re-exports the parser and builder implementations
+ * Root exporter for molex-xml-npm. Re-exports the parser and builder implementations
  * located in `lib/`.
  * @module index
  */
