@@ -1,6 +1,6 @@
 {
-  "name": "molex-xml-npm",
-  "version": "0.2.0",
+  "name": "molex-xml-js",
+  "version": "0.2.1",
   "description": "XML parser/builder with preserved order, CDATA, comments, and type-casting",
   "main": "index.js",
   "files": [
@@ -19,12 +19,12 @@
   "author": "Anthony Wiedman",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tonywied17/molex-xml-npm.git"
+    "url": "git+https://github.com/tonywied17/molex-xml-js-npm.git"
   },
   "bugs": {
-    "url": "https://github.com/tonywied17/molex-xml-npm/issues"
+    "url": "https://github.com/tonywied17/molex-xml-js-npm/issues"
   },
-  "homepage": "https://github.com/tonywied17/molex-xml-npm#readme",
+  "homepage": "https://github.com/tonywied17/molex-xmljs-npm#readme",
   "scripts": {
     "test": "node test/test.js",
     "example": "node test/example.js"
